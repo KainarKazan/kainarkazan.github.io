@@ -1,12 +1,354 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>Kainar</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>@charset "UTF-8"</style><link rel="stylesheet" href="styles.1bec60bc3c632c6c.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.1bec60bc3c632c6c.css"></noscript></head>
-<body>
-  <app-root></app-root>
-<script src="runtime.bcde35bc173226c4.js" type="module"></script><script src="polyfills.5c56bc22ab6f4d9a.js" type="module"></script><script src="main.52efa85be10492ba.js" type="module"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-</body></html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Kainar</title>
+  <base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <style>
+    @charset "UTF-8"
+  </style>
+  <link rel="stylesheet" href="./Kainar_files/styles.1bec60bc3c632c6c.css" media="all"
+    onload="this.media=&#39;all&#39;"><noscript>
+    <link rel="stylesheet" href="styles.1bec60bc3c632c6c.css">
+  </noscript>
+  <style>
+    [_nghost-uwg-c2] {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol;
+      font-style: italic;
+      font-size: 25px;
+      color: #333;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+    }
+
+    .toolbar[_ngcontent-uwg-c2] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fea6d8;
+      color: #fff;
+      font-weight: 600;
+      flex-direction: row
+    }
+
+    .invite-link[_ngcontent-uwg-c2] {
+      color: #fea6d8;
+      justify-content: center;
+      display: flex
+    }
+
+    .toolbar-title[_ngcontent-uwg-c2] {
+      color: red
+    }
+
+    .logodiv[_ngcontent-uwg-c2] {
+      display: flex;
+      flex-direction: column
+    }
+
+    .toolbar[_ngcontent-uwg-c2] #tg-logo[_ngcontent-uwg-c2] {
+      height: 40px;
+      margin: 0 16px
+    }
+
+    .toolbar[_ngcontent-uwg-c2] #tg-logo[_ngcontent-uwg-c2]:hover {
+      opacity: .8
+    }
+
+    .logo[_ngcontent-uwg-c2] {
+      height: 70px;
+      margin: 0 16px
+    }
+
+    @media screen and (max-width: 767px) {
+
+      .toolbar[_ngcontent-uwg-c2],
+      .logo[_ngcontent-uwg-c2] {
+        height: 65px
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+
+      .toolbar[_ngcontent-uwg-c2],
+      .logo[_ngcontent-uwg-c2] {
+        height: 50px
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+
+      .toolbar[_ngcontent-uwg-c2],
+      .logo[_ngcontent-uwg-c2] {
+        height: 40px
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+
+      .toolbar[_ngcontent-uwg-c2],
+      .logo[_ngcontent-uwg-c2] {
+        height: 30px
+      }
+    }
+  </style>
+  <style>
+    .post[_ngcontent-uwg-c1] {
+      display: flex;
+      flex-direction: column;
+      justify-content: center
+    }
+
+    .description[_ngcontent-uwg-c1] {
+      display: flex;
+      justify-content: center;
+      font-family: inherit;
+      font-size: 40px
+    }
+
+    .element[_ngcontent-uwg-c1] {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 600px
+    }
+
+    @media screen and (max-width: 1025px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 600px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 600px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 30px
+      }
+    }
+
+    @media screen and (max-width: 950px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 550px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 550px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 27px
+      }
+    }
+
+    @media screen and (max-width: 875px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 500px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 500px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 25px
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 450px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 450px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 22px
+      }
+    }
+
+    @media screen and (max-width: 725px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 400px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 400px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 20px
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 350px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 350px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 17px
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 300px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 300px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 15px
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 250px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 250px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 12px
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 200px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 200px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 10px
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 150px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 150px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 8px
+      }
+    }
+
+    @media screen and (max-width: 275px) {
+      .band[_ngcontent-uwg-c1] {
+        width: 100px
+      }
+
+      .element[_ngcontent-uwg-c1] {
+        max-width: 100px
+      }
+
+      .description[_ngcontent-uwg-c1] {
+        font-size: 7px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <app-root _nghost-uwg-c2="" ng-version="15.2.4">
+    <div _ngcontent-uwg-c2="" role="banner" class="toolbar">
+      <div _ngcontent-uwg-c2="" class="logodiv"><img _ngcontent-uwg-c2="" class="logo" src="./Kainar_files/main.png">
+      </div>
+    </div>
+    <div _ngcontent-uwg-c2="" class="content"><app-presentation _ngcontent-uwg-c2="" _nghost-uwg-c1="">
+        <div _ngcontent-uwg-c1="" class="band">
+          <h1 _ngcontent-uwg-c1="" class="description" style="font-style: normal;">Как заботиться о цветах в вазе.</h1>
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image1.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Тщательно помойте и подготовьте
+              вазу.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image2.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Добавьте воду - температура
+              должна быть около +10...+15 градусов. Если используете подкормку - добавьте в воду в той концентрации,
+              которая указана на упаковке.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image3.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Подрежьте стебель цветка острым
+              ножом - минимум на 2 см, а лучше на 5-10 см. Угол среза - 45 градусов.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image4.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Уберите все, что может
+              контактировать с водой и загрязнять ее: листья ниже края вазы, веревку или шпагат, если цветы перевязаны.
+              Шипы лучше не удалять.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image5.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Поставьте цветы в воду. Меняйте
+              воду минимум один раз в неделю. Если используете подкормку - менять воду в вазе не нужно. Доливайте
+              необходимое количество воды с подкормкой, когда ее уровень будет ниже 1/3 высоты вазы.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image6.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Избегайте сквозняков, прямых
+              солнечных лучей, соседства с фруктами, дыма и батарей.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image7.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Убирайте из букета те цветы,
+              которые завяли.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post"><img _ngcontent-uwg-c1="" alt="" class="element"
+              src="./Kainar_files/image8.png">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;">Не опрыскивайте бутоны и
+              соцветия
+              водой - лепестки начнут гнить.</p>
+          </div><!---->
+          <div _ngcontent-uwg-c1="" class="post">
+            <p _ngcontent-uwg-c1="" class="description" style="justify-content: center;color: red;">
+              Внимание! Вода из под цветов не подходит для питья животных и людей
+            </p>
+          </div><!----><!---->
+        </div>
+      </app-presentation>
+      <div _ngcontent-uwg-c2="" class="invite">
+        <div _ngcontent-uwg-c2="" class="description"> Подписывайся! Следи за нашими новостями и поставками </div>
+        <div _ngcontent-uwg-c2=""><a _ngcontent-uwg-c2="" aria-label="Мы в телеграм" target="_blank" rel="noopener"
+            href="https://t.me/kainar_coffee" title="Telegram" class="description invite-link"> Цветочное сообщество
+          </a>
+        </div>
+      </div>
+    </div>
+  </app-root>
+
+</body>
+
+</html>
